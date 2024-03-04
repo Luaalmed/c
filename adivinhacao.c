@@ -26,11 +26,12 @@ int main() {
         printf("Você errou!\n");
         printf("Mas não desanime, tente de novo!\n");
 
-        if(chute > numerosecreto) {
+        int maior = chute > numerosecreto;
+        if(maior) {
              printf("Seu chute foi maior que o número secreto\n");
-        }
+        
 
-        if(chute < numerosecreto) {
+        } else {
              printf("Seu chute foi menor que o número secreto\n");
         }
     }
